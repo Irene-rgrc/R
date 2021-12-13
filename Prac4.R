@@ -86,6 +86,8 @@ V(g2)$color <- rep(2:1, length = vcount(g2))
 plot(g1)
 plot(g2)
 
+#---------------------------PRACTICAS-------------------------------
+
 # PRACTICA 4:
 #Grafo 1
 adjm4 <- matrix(c(), nrow=5, ncol=5, byrow=TRUE)
@@ -97,3 +99,22 @@ adjm5 <- matrix(c(0,2,0,1,2,0,2,1,0,2,0,1,1,1,1,0), nrow=4, ncol=4, byrow=TRUE)
 adjm5
 graph5 <- graph.adjacency(adjm5,mode="undirected")
 plot(graph5)
+
+#PRACTICA 5:
+#Variables
+
+#Funciones
+aristas <- function(a){
+  A = (c(), nrow = i, ncol = j, byrow = TRUE) 
+  SumaGrados = 0
+  sumagrados{
+    for (i in i:n){
+      for (j in j:n){
+        SumaGrados <-SumaGrados + aij
+      }
+    }
+    return(SumaGrados)
+  } 
+}
+NAristas = (SumaGrados)/2
+
