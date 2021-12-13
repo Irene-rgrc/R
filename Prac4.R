@@ -87,7 +87,13 @@ plot(g1)
 plot(g2)
 
 # PRACTICA 4:
-adjm4 <- matrix(c(0,0,0,0,0,1,0,0,0,1,0,1,0,1,1,0,0,0,0,1,0,0,1,1,0), nrow=5, ncol=5, byrow=TRUE)
+#Grafo 1
+adjm4 <- matrix(c(), nrow=5, ncol=5, byrow=TRUE)
 adjm4
 graph4 <- graph.adjacency(adjm4,mode="directed")
 plot(graph4)
+#Grafo 2
+adjm5 <- matrix(c(0,2,0,1,2,0,2,1,0,2,0,1,1,1,1,0), nrow=4, ncol=4, byrow=TRUE)
+adjm5
+graph5 <- graph.adjacency(adjm5,mode="undirected")
+plot(graph5)
