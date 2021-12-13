@@ -101,20 +101,18 @@ graph5 <- graph.adjacency(adjm5,mode="undirected")
 plot(graph5)
 
 #PRACTICA 5:
-#Variables
-
 #Funciones
 aristas <- function(a){
-  A = (c(), nrow = i, ncol = j, byrow = TRUE) 
+   n=dim(a)[1]
+   m=dim(a)[2]
   SumaGrados = 0
-  sumagrados{
-    for (i in i:n){
-      for (j in j:n){
-        SumaGrados <-SumaGrados + aij
+  
+    for (i in 1:n){
+      for (j in 1:m){
+        SumaGrados <-SumaGrados + a[i,j]
       }
     }
-    return(SumaGrados)
-  } 
+    return(SumaGrados/2)
 }
-NAristas = (SumaGrados)/2
 
+aristas(adjm)
